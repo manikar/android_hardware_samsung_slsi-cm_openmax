@@ -34,5 +34,9 @@ LOCAL_C_INCLUDES += $(ANDROID_MEDIA_INC)/openmax
 endif
 endif
 
+LOCAL_CFLAGS += -Wno-unused-label
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
 include $(BUILD_SHARED_LIBRARY)
 

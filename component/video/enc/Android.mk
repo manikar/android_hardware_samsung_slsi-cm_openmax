@@ -58,7 +58,11 @@ ifeq ($(BOARD_USE_QOS_CTRL), true)
 LOCAL_CFLAGS += -DUSE_QOS_CTRL
 endif
 
-LOCAL_CFLAGS += -Wno-error
+LOCAL_CFLAGS += -Wno-enum-conversion
+LOCAL_CFLAGS += -Wno-undefined-inline
+LOCAL_CFLAGS += -Wno-unused-label
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
 
 LOCAL_SHARED_LIBRARIES := libcsc liblog
 

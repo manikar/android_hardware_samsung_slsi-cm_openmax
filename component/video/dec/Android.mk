@@ -58,6 +58,12 @@ ifeq ($(BOARD_USE_STOREMETADATA), true)
 LOCAL_CFLAGS += -DUSE_STOREMETADATA
 endif
 
-LOCAL_CFLAGS += -Wno-error
+
+LOCAL_CFLAGS += -Wno-enum-conversion
+LOCAL_CFLAGS += -Wno-parentheses-equality
+LOCAL_CFLAGS += -Wno-undefined-inline
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+LOCAL_CFLAGS += -Wno-unused-label
 
 include $(BUILD_STATIC_LIBRARY)

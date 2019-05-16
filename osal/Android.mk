@@ -76,7 +76,9 @@ ifeq ($(TARGET_BOARD_PLATFORM),exynos4)
 LOCAL_CFLAGS += -DUSE_MFC5X_ALIGNMENT
 endif
 
-LOCAL_CFLAGS += -Wno-error
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+LOCAL_CFLAGS += -Wno-unused-label
 
 LOCAL_SHARED_LIBRARIES := libhardware libnativewindow
 LOCAL_STATIC_LIBRARIES := liblog libcutils libarect libExynosVideoApi
